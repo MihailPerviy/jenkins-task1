@@ -22,7 +22,17 @@ pipeline {
         }
         stage('Unit Test') {
             steps {
-                 // Use the maven test phase to run unit tests
+                 public class ModuleOneTests {
+	@Test public void testMethodOne() {...}
+	@Test public void testMethodTwo() {...}
+}
+
+public class ModuleTwoTests {
+	@Test public void testMethodOne() {...}
+	@Test public void testMethodTwo() {...}
+	@Test public void testMethodThree() {...}
+	@Test public void testMethodFour() {...}
+}
             }
         }
     }
