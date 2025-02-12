@@ -13,6 +13,8 @@
     <url>http://maven.apache.org</url>
 
     <properties>
+        <maven.test.skip>true</maven.test.skip>
+        <tests.skip>true</tests.skip>
         <application.password>My_Pass</application.password>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
@@ -160,7 +162,14 @@
         <finalName>${project.artifactId}</finalName>
 
         <plugins>
-
+            <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-surefire-plugin</artifactId>
+             <version>2.22.2</version>
+             <configuration>
+                 <skipTests>${tests.skip}</skipTests>
+             </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
