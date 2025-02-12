@@ -9,11 +9,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                    @Test
+                    
                     public void thisDoesntCompile() {
                         baeldung;
                     }
-                    @Test
+                    
                     public void thisTestFails() {
                         fail("This is a failed test case");
                     }
@@ -23,15 +23,15 @@ pipeline {
         stage('Unit Test') {
             steps {
                  public class ModuleOneTests {
-	@Test public void testMethodOne() {...}
-	@Test public void testMethodTwo() {...}
+	 public void testMethodOne() {...}
+	 public void testMethodTwo() {...}
 }
 
 public class ModuleTwoTests {
-	@Test public void testMethodOne() {...}
-	@Test public void testMethodTwo() {...}
-	@Test public void testMethodThree() {...}
-	@Test public void testMethodFour() {...}
+	 public void testMethodOne() {...}
+	 public void testMethodTwo() {...}
+	 public void testMethodThree() {...}
+	 public void testMethodFour() {...}
 }
             }
         }
