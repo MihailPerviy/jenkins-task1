@@ -23,15 +23,15 @@ pipeline {
         stage('Unit Test') {
             steps {
                  public class ModuleOneTests {
-	 public void testMethodOne() {...}
-	 public void testMethodTwo() {...}
+	@Test public void testMethodOne() {...}
+	@Test public void testMethodTwo() {...}
 }
 
 public class ModuleTwoTests {
-	 public void testMethodOne() {...}
-	 public void testMethodTwo() {...}
-	 public void testMethodThree() {...}
-	 public void testMethodFour() {...}
+	@Test public void testMethodOne() {...}
+	@Test public void testMethodTwo() {...}
+	@Test public void testMethodThree() {...}
+	@Test public void testMethodFour() {...}
 }
             }
         }
