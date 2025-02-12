@@ -9,6 +9,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                    @Test
+                    public void thisDoesntCompile() {
+                        baeldung;
+                    }
+                    @Test
+                    public void thisTestFails() {
+                        fail("This is a failed test case");
+                    }
                 // Use the maven package phase to build the project
             }
         }
