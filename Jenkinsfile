@@ -21,18 +21,7 @@ pipeline {
             }
         }
         stage('Unit Test') {
-            steps {
-                 public class ModuleOneTests {
-	@Test public void testMethodOne() {...}
-	@Test public void testMethodTwo() {...}
-}
-
-public class ModuleTwoTests {
-	@Test public void testMethodOne() {...}
-	@Test public void testMethodTwo() {...}
-	@Test public void testMethodThree() {...}
-	@Test public void testMethodFour() {...}
-}
+            
             }
         }
     }
